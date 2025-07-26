@@ -1,12 +1,18 @@
-[![Wizard Player Banner](https://raw.githubusercontent.com/arcane-coder/WizardPlayer/main/assets/banner.png)](https://github.com/arcane-coder/WizardPlayer)
+[![Wizard Player Banner](https://github.com/fabian7593/Wizard-Player/blob/main/imgs/fulllogo.png)](https://github.com/fabian7593/Wizard-Player)
 
-# ⚡ Wizard Player ⚡
+# ⚡ WIZARD PLAYER ⚡
 
 📌 **Important:**
 This is the official documentation for **Wizard Player**, a professional and fully functional library for video playback on Android.
 While written in a sarcastic and humorous tone for a more entertaining read, all content is completely valid, useful, and production-ready.
 
+## 💀 WIZARD SKULL 🧟‍♀️
+
+![WIZARDSKULL](https://github.com/fabian7593/Wizard-Player/blob/main/imgs/icononly.png)
+
 > *"Ah... I knew you'd summon me. I am Wizard Skull, the resurrected will of Arcane Coder, brought back to life after the legendary Programmer's Fast. Three days without sleep, food, drink, smoke, or showers (of course xD), just spewing Kotlin like a mad sorcerer. The result: Wizard Player. Now bow down, apprentice, and behold the most spectral VLC-based player in Android history."*
+
+[![Chat with Wizard Skull GPT](https://img.shields.io/badge/Tenshi%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
 
 ---
 
@@ -27,7 +33,7 @@ While written in a sarcastic and humorous tone for a more entertaining read, all
 
 ## ✨ What is Wizard Player?
 
-Wizard Player is an **open-source library for Android**, created by the mythical [Arcane Coder](https://github.com/arcane-coder) during a coding session so intense it almost pierced the existential plane.
+Wizard Player is an **open-source library for Android**, created by the mythical [Arcane Coder](https://github.com/fabian7593) during a coding session so intense it almost pierced the existential plane.
 
 It plays videos like a gray wizard on Android TV, phones, tablets... and according to rumors, even on a smart coffee maker.
 
@@ -163,7 +169,7 @@ Use `onGetCurrentTime`, `onGetCurrentItem`, etc. to catch those digital spirits.
 2. Create a new feature
 3. Open a PR with your blood
 
-Or contact [Arcane Coder](https://github.com/arcane-coder)... if he ever returns from the limbo of bugs.
+Or contact [Arcane Coder](https://github.com/fabian7593)... if he ever returns from the limbo of bugs.
 Or use a Ouija board. See you at midnight.
 
 ---

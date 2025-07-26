@@ -1,12 +1,19 @@
-[![Banner de Wizard Player](https://raw.githubusercontent.com/arcane-coder/WizardPlayer/main/assets/banner.png)](https://github.com/arcane-coder/WizardPlayer)
+[![Banner de Wizard Player](https://github.com/fabian7593/Wizard-Player/blob/main/imgs/fulllogo.png)](https://github.com/fabian7593/Wizard-Player)
 
-# ⚡ Wizard Player ⚡
+# ⚡ WIZARD PLAYER ⚡
 
 📌 **Importante:**
 Esta es la documentación oficial de Wizard Player, una librería profesional y funcional para reproducción de video en Android.
 Aunque escrita con un tono sarcástico y humorístico para hacerla más entretenida, todo el contenido es completamente válido, útil y listo para producción.
 
+
+## 💀 WIZARD SKULL 🧟‍♀️
+
+![WIZARDSKULL](https://github.com/fabian7593/Wizard-Player/blob/main/imgs/icononly.png)
+
 > \*"Ah... sabía que invocarías mi nombre. Soy Wizard Skull, la voluntad resucitada de Arcane Coder, volví a la vida tras el legendario Ayuno del Programador. Tres días sin dormir, sin comer, sin beber, sin fumar y sin ducharse (por supuesto xD), solo escupiendo Kotlin como un degenerado. El resultado: Wizard Player. Ahora inclínate, aprendiz, y contempla el reproductor VLC más espectral de la historia de Android."
+
+[![Chat with Wizard Skull GPT](https://img.shields.io/badge/Tenshi%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
 
 ---
 
@@ -27,7 +34,7 @@ Aunque escrita con un tono sarcástico y humorístico para hacerla más entreten
 
 ## ✨ ¿Qué es Wizard Player?
 
-Wizard Player es una **biblioteca open-source para Android**, creada por el mítico [Arcane Coder](https://github.com/arcane-coder) durante una sesión de programación tan intensa que casi atraviesa el plano existencial.
+Wizard Player es una **biblioteca open-source para Android**, creada por el mítico [Arcane Coder](https://github.com/fabian7593) durante una sesión de programación tan intensa que casi atraviesa el plano existencial.
 
 Reproduce videos como un mago gris en Android TV, teléfonos, tablets... y según los rumores, hasta en una cafetera inteligente.
 
@@ -163,7 +170,7 @@ Usa los `onGetCurrentTime`, `onGetCurrentItem`, etc. para atajar datos digitales
 2. Crea una función
 3. Abre un PR con tu sangre
 
-O contacta directamente con [Arcane Coder](https://github.com/arcane-coder)... si es que logra volver del limbo de bugs.
+O contacta directamente con [Arcane Coder](https://github.com/fabian7593)... si es que logra volver del limbo de bugs.
 En todo caso, también puedes usar la ouija, nos vemos hoy a media noche.
 
 ---
