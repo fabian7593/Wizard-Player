@@ -13,7 +13,7 @@ Aunque escrita con un tono sarcástico y humorístico para hacerla más entreten
 
 > \*"Ah... sabía que invocarías mi nombre. Soy Wizard Skull, la voluntad resucitada de Arcane Coder, volví a la vida tras el legendario Ayuno del Programador. Tres días sin dormir, sin comer, sin beber, sin fumar y sin ducharse (por supuesto xD), solo escupiendo Kotlin como un degenerado. El resultado: Wizard Player. Ahora inclínate, aprendiz, y contempla el reproductor VLC más espectral de la historia de Android."
 
-[![Chat with Wizard Skull GPT](https://img.shields.io/badge/Tenshi%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
+[![Chat con Wizard Skull GPT](https://img.shields.io/badge/WizardPlayer%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
 
 ---
 
