@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2C6B2F</color>        <!-- Verde vibrante -->
+    <color name="primary_variant">#1B3B1F</color> <!-- Verde oscuro -->
+    <color name="secondary">#B2D536</color>      <!-- Verde necrótico -->
+    <color name="background">#FFFFFFFF</color>   <!-- Fondo blanco -->
+    <color name="surface">#F0F0F0</color>        <!-- Superficie clara -->
+    <color name="on_primary">#FFFFFF</color>     <!-- Texto sobre primario -->
+    <color name="on_secondary">#000000</color>   <!-- Texto sobre secundario -->
+    <color name="on_background">#000000</color>  <!-- Texto sobre fondo -->
+    <color name="on_surface">#000000</color>     <!-- Texto sobre superficie -->
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

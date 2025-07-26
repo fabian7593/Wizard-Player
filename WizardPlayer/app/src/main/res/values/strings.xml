@@ -1,0 +1,9 @@
+
+<resources>
+    <string name="app_name">Wizard Player</string>
+    <string name="label_id_numeric">ID numérico</string>
+    <string name="button_add">Agregar</string>
+    <string name="text_show_brand">MOSTRAR MARCA</string>
+    <string name="text_poor_cpu">MODO CPU DÉBIL :(</string>
+    <string name="button_play_all">▶ Reproducir todos los capítulos</string>
+</resources>

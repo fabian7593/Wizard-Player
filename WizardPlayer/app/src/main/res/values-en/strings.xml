@@ -1,0 +1,9 @@
+
+<resources>
+    <string name="app_name">Wizard Player</string>
+    <string name="label_id_numeric">Numeric ID</string>
+    <string name="button_add">Add</string>
+    <string name="text_show_brand">SHOW BRAND</string>
+    <string name="text_poor_cpu">POOR CPU MODE :(</string>
+    <string name="button_play_all">▶ Play all episodes</string>
+</resources>
