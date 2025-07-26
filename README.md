@@ -8,7 +8,7 @@ While written in a sarcastic and humorous tone for a more entertaining read, all
 
 ## 💀 WIZARD SKULL 🧟‍♀️
 
-<img src="https://github.com/fabian7593/Wizard-Player/blob/main/imgs/icononly.png?raw=true" alt="WIZARDSKULL" width="60"/>
+<img src="https://github.com/fabian7593/Wizard-Player/blob/main/imgs/icononly.png?raw=true" alt="WIZARDSKULL" width="120"/>
 
 > *"Ah... I knew you'd summon me. I am Wizard Skull, the resurrected will of Arcane Coder, brought back to life after the legendary Programmer's Fast. Three days without sleep, food, drink, smoke, or showers (of course xD), just spewing Kotlin like a mad sorcerer. The result: Wizard Player. Now bow down, apprentice, and behold the most spectral VLC-based player in Android history."*
 
@@ -192,7 +192,7 @@ Or use a Ouija board. See you at midnight.
 
 > *"After implementing Wizard Player, you’ll be able to play all your videos with proper copyright and licensing... not like those who use XUI ONE or XTREAM UI for shady content... wink wink..."*
 
-<img src="https://github.com/fabian7593/Wizard-Player/blob/main/imgs/agatha-wink-cat.gif?raw=true" alt="WIZARDSKULL" width="120"/>
+<img src="https://github.com/fabian7593/Wizard-Player/blob/main/imgs/agatha-wink-cat.gif?raw=true" alt="WIZARDSKULL" width="240"/>
 
 > *"May your framerates be smooth, your subtitles perfectly synced, and your codecs never fail... Wizard Skull departs, until the next summoning."*
 
