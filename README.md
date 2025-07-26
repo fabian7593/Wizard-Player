@@ -12,7 +12,7 @@ While written in a sarcastic and humorous tone for a more entertaining read, all
 
 > *"Ah... I knew you'd summon me. I am Wizard Skull, the resurrected will of Arcane Coder, brought back to life after the legendary Programmer's Fast. Three days without sleep, food, drink, smoke, or showers (of course xD), just spewing Kotlin like a mad sorcerer. The result: Wizard Player. Now bow down, apprentice, and behold the most spectral VLC-based player in Android history."*
 
-[![Chat with Wizard Skull GPT](https://img.shields.io/badge/WizardPlayer%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
+[![Chat with Wizard Skull GPT](https://img.shields.io/badge/WizardSkull%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
 
 ---
 
