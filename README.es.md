@@ -9,7 +9,7 @@ Aunque escrita con un tono sarcástico y humorístico para hacerla más entreten
 
 ## 💀 WIZARD SKULL 🧟‍♀️
 
-![WIZARDSKULL](https://github.com/fabian7593/Wizard-Player/blob/main/imgs/icononly.png)
+<img src="https://github.com/fabian7593/Wizard-Player/blob/main/imgs/icononly.png?raw=true" alt="WIZARDSKULL" width="60"/>
 
 > \*"Ah... sabía que invocarías mi nombre. Soy Wizard Skull, la voluntad resucitada de Arcane Coder, volví a la vida tras el legendario Ayuno del Programador. Tres días sin dormir, sin comer, sin beber, sin fumar y sin ducharse (por supuesto xD), solo escupiendo Kotlin como un degenerado. El resultado: Wizard Player. Ahora inclínate, aprendiz, y contempla el reproductor VLC más espectral de la historia de Android."
 
@@ -193,7 +193,7 @@ En todo caso, también puedes usar la ouija, nos vemos hoy a media noche.
 
 > \*"Tras implementar Wizard Player, podrás reproducir todos tus videos con todos los permisos de copyright y leyes vigentes... no como otros que usan XUI ONE o XTREAM UI para contenidos sin derechos... guiño guiño..."
 
-![Guiño Guiño](https://i.imgflip.com/7x5txe.jpg)
+<img src="https://github.com/fabian7593/Wizard-Player/blob/main/imgs/agatha-wink-cat.gif?raw=true" alt="WIZARDSKULL" width="120"/>
 
 > \*"Que tus framerates sean suaves, tus subtítulos estén bien sincronizados, y tus codecs nunca fallen... Wizard Skull se despide, hasta la próxima invocación."
 
