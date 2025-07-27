@@ -20,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WizardPlayer"
         android:banner="@drawable/bannertv"
+        android:screenOrientation="landscape"
+        android:exported="true"
+        android:configChanges="orientation|screenSize"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"

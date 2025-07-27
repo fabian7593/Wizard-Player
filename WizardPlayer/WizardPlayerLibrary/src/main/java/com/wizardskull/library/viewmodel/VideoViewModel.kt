@@ -104,7 +104,7 @@ class VideoViewModel : ViewModel() {
     // ───────────────────────────────────────────────────────────────
     private var observeJob: Job? = null
 
-    private fun observeVideoPosition() {
+    fun observeVideoPosition() {
         observeJob?.cancel()
         observeJob = viewModelScope.launch {
             while (isActive) {
@@ -142,7 +142,7 @@ class VideoViewModel : ViewModel() {
 
                     if (current > 0 && current == lastKnownPosition && _isPlaying.value) {
 
-                        val position = (current.toFloat() / duration).coerceIn(0f, 0.95f)
+                        val position = (current.toFloat() / duration).coerceIn(0f, 0.99f)
 
                         recoveringFromFreeze = true
                         mediaPlayer.stop()
@@ -272,8 +272,8 @@ class VideoViewModel : ViewModel() {
 
     fun onSeekFinished() {
         try {
-            val safeSeek = minOf(_currentTime.value, _videoLength.value - 3)
-            val seekFraction = (safeSeek.toFloat() / _videoLength.value).coerceIn(0f, 0.95f)
+            val safeSeek = minOf(_currentTime.value, _videoLength.value - 1)
+            val seekFraction = (safeSeek.toFloat() / _videoLength.value).coerceIn(0f, 0.999f)
             mediaPlayer.setPosition(seekFraction)
         } catch (e: Exception) {
             AppLogger.error("VideoViewModel", "❌ Error while seeking: ${e.message}")

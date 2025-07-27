@@ -10,6 +10,6 @@
     <color name="on_background">#000000</color>  <!-- Texto sobre fondo -->
     <color name="on_surface">#000000</color>     <!-- Texto sobre superficie -->
 
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>

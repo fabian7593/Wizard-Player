@@ -93,6 +93,7 @@ fun HandleMediaPlayerReinit(
                 setLibVLC(newLib)
                 setMediaPlayer(newPlayer)
                 viewModel.mediaPlayer = newPlayer
+                viewModel.observeVideoPosition()
                 viewModel.prepareVideoUrl(item.url)
                 viewModel.resetPlaybackTime()
                 viewModel.mediaPlayer.position = 0f

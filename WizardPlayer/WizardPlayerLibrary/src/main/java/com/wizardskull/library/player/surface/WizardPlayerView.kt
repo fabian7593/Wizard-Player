@@ -36,6 +36,7 @@ fun WizardPlayerView(
 ) {
     var surfaceHolder by remember { mutableStateOf<SurfaceHolder?>(null) }
     var surfaceViewRef by remember { mutableStateOf<SurfaceView?>(null) }
+    var tracksLoaded by remember(videoUrl) { mutableStateOf(false) }
 
     AndroidView(
         modifier = modifier,
@@ -118,6 +119,8 @@ fun WizardPlayerView(
 
                             MediaPlayer.Event.ESAdded -> {
 
+                                if (!tracksLoaded) {
+                                    tracksLoaded = true
                                     try {
 
                                         // -- AUDIO TRACKS --
@@ -138,7 +141,6 @@ fun WizardPlayerView(
                                         }
 
 
-
                                         // -- SUBTITLES TRACKS --
                                         val subtitleTracks = mediaPlayer.spuTracks
                                             ?.mapNotNull { track ->
@@ -151,18 +153,27 @@ fun WizardPlayerView(
 
                                         config.preferenceSubtitle?.let { preferredCode ->
                                             val preferredSub = subtitleTracks.find {
-                                                LanguageMatcher.matchesLanguage(it.second, preferredCode)
+                                                LanguageMatcher.matchesLanguage(
+                                                    it.second,
+                                                    preferredCode
+                                                )
                                             }
                                             preferredSub?.let {
                                                 mediaPlayer.spuTrack = it.first
-                                                val code = LanguageMatcher.detectSubtitleCode(it.second)
+                                                val code =
+                                                    LanguageMatcher.detectSubtitleCode(it.second)
                                                 onSubtitleChanged?.invoke(code ?: preferredCode)
                                             }
                                         }
 
                                     } catch (e: Exception) {
-                                        AppLogger.warning("WizardPlayerView", "⚠️ Error loading media tracks: ${e.message}")
+                                        tracksLoaded = false
+                                        AppLogger.warning(
+                                            "WizardPlayerView",
+                                            "⚠️ Error loading media tracks: ${e.message}"
+                                        )
                                     }
+                                }
 
                             }
 

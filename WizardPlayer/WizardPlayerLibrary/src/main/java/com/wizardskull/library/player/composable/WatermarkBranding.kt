@@ -1,16 +1,19 @@
 package com.wizardskull.library.player.composable
 
+import android.graphics.BitmapFactory
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.FilterQuality
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.wizardskull.library.player.config.PlayerConfig
 
@@ -28,13 +31,18 @@ fun WatermarkBranding(
             .padding(end = 12.dp, bottom = 12.dp)
     ) {
         if(config.watermarkResId !== null){
-            Icon(
-                painter = painterResource(id = config.watermarkResId),
+            val context = LocalContext.current
+            val bitmap = BitmapFactory.decodeResource(context.resources, config.watermarkResId)
+            val imageBitmap = bitmap.asImageBitmap()
+
+            Image(
+                bitmap = imageBitmap,
                 contentDescription = "App branding",
-                tint = Color.Unspecified,
                 modifier = Modifier
                     .size((config.brandingSize ?: 48).dp)
-                    .graphicsLayer(alpha = 0.8f)
+                    .graphicsLayer(alpha = 0.8f),
+                contentScale = ContentScale.Fit,
+                filterQuality = FilterQuality.High
             )
         }
     }
