@@ -199,6 +199,6 @@ En todo caso, también puedes usar la ouija, nos vemos hoy a media noche.
 
 ---
 
-APK V1 https://tinyurl.com/wizpv1
+APK V1 [https://tinyurl.com/wizpv1](https://tinyurl.com/wizpv01)
 
 Licencia Apache 2.0 © Arcane Coder
