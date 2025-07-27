@@ -198,6 +198,6 @@ Or use a Ouija board. See you at midnight.
 
 ---
 APK DEMO V1
-https://tinyurl.com/wizpv1
+[https://tinyurl.com/wizpv1](https://tinyurl.com/wizpv01)
 
 Apache License 2.0 © Arcane Coder
