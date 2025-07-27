@@ -1,6 +1,6 @@
 [![Wizard Player Banner](https://github.com/fabian7593/Wizard-Player/blob/main/imgs/fulllogo.png)](https://github.com/fabian7593/Wizard-Player)
 
-# ⚡ WIZARD PLAYER ⚡
+# WIZARD PLAYER ⚡
 
 📌 **Important:**
 This is the official documentation for **Wizard Player**, a professional and fully functional library for video playback on Android.
