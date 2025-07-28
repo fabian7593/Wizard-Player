@@ -22,7 +22,7 @@ Aunque escrita con un tono sarcástico y humorístico para hacerla más entreten
 
 * [¿Qué es Wizard Player?](#qué-es-wizard-player)
 * [Funciones Hechizantes](#funciones-hechizantes)
-* [Como Instalar (Invoca el artefacto)](#funciones-hechizantes)
+* [Como Instalar (Invoca el artefacto)](#cómo-instalar-invoca-el-artefacto)
 * [Cómo Usarlo (sin vender tu alma)](#cómo-usarlo-sin-vender-tu-alma)
 * [Personalización Oscura](#personalización-oscura)
 * [Eventos y Seguimiento](#eventos-y-seguimiento)
