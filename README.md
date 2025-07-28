@@ -184,9 +184,9 @@ Or use a Ouija board. See you at midnight.
 
 ---
 
-## ⚠️ Known Bugs (HAHAHA)
+## ⚠️ Known Bugs 
 
-* If you fast-forward to the end of the video, it might bounce you 2 minutes back. WITCHCRAFT! (Actually, no idea how to fix that lol)
+* 
 
 ---
 
