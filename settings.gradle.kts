@@ -21,6 +21,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "wizardplayer"
+//rootProject.name = "wizardplayer"
 //include(":app")
+rootProject.name = "WizardPlayerLibrary"
 include(":WizardPlayerLibrary")
