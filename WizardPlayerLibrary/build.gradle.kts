@@ -56,14 +56,16 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.fabian7593"
+            artifactId = "wizardplayer"
+            version = "0.1.1"
+
+            afterEvaluate {
                 from(components["release"])
-                groupId = "com.github.fabian7593"
-                artifactId = "wizardplayer"
-                version = "0.1.0"
             }
         }
     }
