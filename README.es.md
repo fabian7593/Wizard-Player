@@ -22,6 +22,7 @@ Aunque escrita con un tono sarcástico y humorístico para hacerla más entreten
 
 * [¿Qué es Wizard Player?](#qué-es-wizard-player)
 * [Funciones Hechizantes](#funciones-hechizantes)
+* [Como Instalar (Invoca el artefacto)](#funciones-hechizantes)
 * [Cómo Usarlo (sin vender tu alma)](#cómo-usarlo-sin-vender-tu-alma)
 * [Personalización Oscura](#personalización-oscura)
 * [Eventos y Seguimiento](#eventos-y-seguimiento)
@@ -54,6 +55,38 @@ Soporta MP4, MKV, AVI, subtítulos internos y externos, botones personalizables,
 * Manejo de caídas de conexión como un paladín de la red
 * Navegación con enfoque en TV fluida
 * Lista de videos dinámica y autoplay
+
+---
+
+
+
+## Cómo Instalar? (Invoca el Artefacto)
+> *"Ah... el rito de la integración. No es solo código... es un pacto."*
+
+### Paso 1: Habilita JitPack (abre el portal)
+
+En tu **`settings.gradle.kts`**, añade JitPack al bloque de repositorios:
+
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") } 
+    }
+}
+```
+
+### Paso 2: Añadir la Librería (absorbe la magia)
+
+En tu `build.gradle.kts` de la app o módulo donde quieras invocar al reproductor:
+
+```kotlin
+dependencies {
+    implementation("com.github.fabian7593:Wizard-Player:0.1.2") // 👈 El artefacto sagrado
+}
+```
 
 ---
 
