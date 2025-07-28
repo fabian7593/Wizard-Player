@@ -43,7 +43,7 @@ Supports MP4, MKV, AVI, internal and external subtitles, customizable buttons, b
 
 ---
 
-## ✨ Bewitching Features
+## Bewitching Features
 
 * VLC engine under the hood for video playback.
 * Support for Android TV and touch gestures.
