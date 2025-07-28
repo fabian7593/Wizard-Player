@@ -23,6 +23,7 @@ While written in a sarcastic and humorous tone for a more entertaining read, all
 
 * [What is Wizard Player?](#what-is-wizard-player)
 * [Bewitching Features](#bewitching-features)
+* [How To Install (Summon the Artifact)](#how-to-install)
 * [How to Use It (without selling your soul)](#how-to-use-it-without-selling-your-soul)
 * [Dark Customization](#dark-customization)
 * [Events and Tracking](#events-and-tracking)
@@ -55,6 +56,36 @@ Supports MP4, MKV, AVI, internal and external subtitles, customizable buttons, b
 * Connection fallback handling like a network paladin.
 * Smooth TV focus navigation.
 * Dynamic playlist and autoplay.
+
+---
+
+## How to Install (Summon the Artifact)
+> *"Ah... the rite of integration. It’s not just code... it’s a pact."*
+
+### Step 1: Enable JitPack (open the gateway)
+
+In your **`settings.gradle.kts`**, add JitPack to the repositories block:
+
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") } 
+    }
+}
+```
+
+### Step 2: Add the Library (absorb the magic)
+
+In your `build.gradle.kts` of the app or module where you want to use it:
+
+```kotlin
+dependencies {
+    implementation("com.github.fabian7593:Wizard-Player:0.1.2") 
+}
+```
 
 ---
 
