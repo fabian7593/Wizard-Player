@@ -183,9 +183,9 @@ En todo caso, también puedes usar la ouija, nos vemos hoy a media noche.
 
 ---
 
-## ⚠️ Bugs Conocidos (JAJAJA)
+## ⚠️ Bugs Conocidos 
 
-* Si adelantas al final del video, puede que te devuelva 2 minutos antes. ¡BRUJERÍA! (Mentira no se como solucionarlo JAJAJA)
+* Lo sabremos conforme pase el tiempo
 
 ---
 
