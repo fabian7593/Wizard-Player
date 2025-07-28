@@ -14,6 +14,7 @@ Aunque escrita con un tono sarcástico y humorístico para hacerla más entreten
 > \*"Ah... sabía que invocarías mi nombre. Soy Wizard Skull, la voluntad resucitada de Arcane Coder, volví a la vida tras el legendario Ayuno del Programador. Tres días sin dormir, sin comer, sin beber, sin fumar y sin ducharse (por supuesto xD), solo escupiendo Kotlin como un degenerado. El resultado: Wizard Player. Ahora inclínate, aprendiz, y contempla el reproductor VLC más espectral de la historia de Android."
 
 [![Chat con Wizard Skull GPT](https://img.shields.io/badge/WizardPlayer%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
+[![](https://jitpack.io/v/fabian7593/Wizard-Player.svg)](https://jitpack.io/#fabian7593/Wizard-Player)
 
 ---
 
@@ -24,15 +25,15 @@ Aunque escrita con un tono sarcástico y humorístico para hacerla más entreten
 * [Cómo Usarlo (sin vender tu alma)](#cómo-usarlo-sin-vender-tu-alma)
 * [Personalización Oscura](#personalización-oscura)
 * [Eventos y Seguimiento](#eventos-y-seguimiento)
-* [Compatibilidad Infernal](#compatibilidad-infernal)
+* [Compatibilidad](#compatibilidad)
 * [Contribuir al Caos](#contribuir-al-caos)
-* [Lista de Maldiciones (TODO)](#lista-de-maldiciones-todo)
-* [Bugs Conocidos (JAJAJA)](#bugs-conocidos-jajaja)
+* [Lista de Hechizos (TODO)](#lista-de-hechizos-todo)
+* [Bugs Conocidos](#bugs-conocidos)
 * [Despedida desde el Más Allá](#despedida-desde-el-más-allá)
 
 ---
 
-## ✨ ¿Qué es Wizard Player?
+## ¿Qué es Wizard Player?
 
 Wizard Player es una **biblioteca open-source para Android**, creada por el mítico [Arcane Coder](https://github.com/fabian7593) durante una sesión de programación tan intensa que casi atraviesa el plano existencial.
 
@@ -42,7 +43,7 @@ Soporta MP4, MKV, AVI, subtítulos internos y externos, botones personalizables,
 
 ---
 
-## ✨ Funciones Hechizantes
+## Funciones Hechizantes
 
 * Motor VLC para reproducción de videos.
 * Soporte para Android TV y gestos touch
@@ -56,7 +57,7 @@ Soporta MP4, MKV, AVI, subtítulos internos y externos, botones personalizables,
 
 ---
 
-## ⚙ Cómo Usarlo (sin vender tu alma)
+## Cómo Usarlo (sin vender tu alma)
 
 ```kotlin
 val videoItems = listOf(
@@ -103,7 +104,7 @@ WizardVideoPlayer(
 )
 ```
 
-### 🧾 Explicación de cada Configuración
+### Explicación de cada Configuración
 
 > *"Ah, joven mortal curioso... déjame explicarte cada pergamino oscuro del `PlayerConfig`. Si no los defines, se invocan los valores por defecto que puedes ver en el código... o en los susurros del inframundo."*
 
@@ -132,7 +133,7 @@ WizardVideoPlayer(
 
 ---
 
-## 🎨 Personalización Oscura
+## Personalización Oscura
 
 * Cambia colores, iconos y tamaños.
 * Modifica cada texto sin tocar `strings.xml`.
@@ -142,7 +143,7 @@ WizardVideoPlayer(
 
 ---
 
-## 🔊 Eventos y Seguimiento
+## Eventos y Seguimiento
 
 Wizard Player lanza eventos como hechizos:
 
@@ -155,8 +156,8 @@ Usa los `onGetCurrentTime`, `onGetCurrentItem`, etc. para atajar datos digitales
 
 ---
 
-## 🚗 Compatibilidad Infernal
-
+## Compatibilidad Infernal
+Esta libreria es compatible con Android 7+
 * Android TV
 * Teléfonos
 * Tablets`
@@ -164,7 +165,7 @@ Usa los `onGetCurrentTime`, `onGetCurrentItem`, etc. para atajar datos digitales
 
 ---
 
-## ✍️ Contribuir al Caos
+## Contribuir al Caos
 
 1. Haz un fork
 2. Crea una función
@@ -175,7 +176,7 @@ En todo caso, también puedes usar la ouija, nos vemos hoy a media noche.
 
 ---
 
-## ☑️ Lista de Hechizos (TODO)
+## Lista de Hechizos (TODO)
 
 * [ ] Mostrar miniatura en el slider al enfocar
 * [ ] Gestos en móvil y tablet (volumen, brillo, seek)
@@ -183,13 +184,13 @@ En todo caso, también puedes usar la ouija, nos vemos hoy a media noche.
 
 ---
 
-## ⚠️ Bugs Conocidos 
+## Bugs Conocidos 
 
 * Lo sabremos conforme pase el tiempo
 
 ---
 
-## 🧙 Despedida desde el Más Allá
+## Despedida desde el Más Allá
 
 > \*"Tras implementar Wizard Player, podrás reproducir todos tus videos con todos los permisos de copyright y leyes vigentes... no como otros que usan XUI ONE o XTREAM UI para contenidos sin derechos... guiño guiño..."
 
