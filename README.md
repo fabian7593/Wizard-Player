@@ -23,7 +23,7 @@ While written in a sarcastic and humorous tone for a more entertaining read, all
 
 * [What is Wizard Player?](#what-is-wizard-player)
 * [Bewitching Features](#bewitching-features)
-* [How To Install (Summon the Artifact)](#how-to-install)
+* [How To Install (Summon the Artifact)](#how-to-install-summon-the-artifact)
 * [How to Use It (without selling your soul)](#how-to-use-it-without-selling-your-soul)
 * [Dark Customization](#dark-customization)
 * [Events and Tracking](#events-and-tracking)
