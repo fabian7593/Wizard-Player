@@ -15,6 +15,7 @@ While written in a sarcastic and humorous tone for a more entertaining read, all
 > *"Ah... I knew you'd summon me. I am Wizard Skull, the resurrected will of Arcane Coder, brought back to life after the legendary Programmer's Fast. Three days without sleep, food, drink, smoke, or showers (of course xD), just spewing Kotlin like a mad sorcerer. The result: Wizard Player. Now bow down, apprentice, and behold the most spectral VLC-based player in Android history."*
 
 [![Chat with Wizard Skull GPT](https://img.shields.io/badge/WizardSkull%20GPT-OpenAI-brightgreen?logo=chatbot)](https://chatgpt.com/share/68855b5d-6c80-8011-ae35-bfd33dc3a612)
+[![](https://jitpack.io/v/fabian7593/Wizard-Player.svg)](https://jitpack.io/#fabian7593/Wizard-Player)
 
 ---
 
@@ -25,15 +26,15 @@ While written in a sarcastic and humorous tone for a more entertaining read, all
 * [How to Use It (without selling your soul)](#how-to-use-it-without-selling-your-soul)
 * [Dark Customization](#dark-customization)
 * [Events and Tracking](#events-and-tracking)
-* [Infernal Compatibility](#infernal-compatibility)
+* [Compatibility](#compatibility)
 * [Contribute to the Chaos](#contribute-to-the-chaos)
 * [Spell List (TODO)](#spell-list-todo)
-* [Known Bugs (HAHAHA)](#known-bugs-hahaha)
+* [Known Bugs](#known-bugs)
 * [Farewell from the Beyond](#farewell-from-the-beyond)
 
 ---
 
-## ✨ What is Wizard Player?
+## What is Wizard Player?
 
 Wizard Player is an **open-source library for Android**, created by the mythical [Arcane Coder](https://github.com/fabian7593) during a coding session so intense it almost pierced the existential plane.
 
@@ -57,7 +58,7 @@ Supports MP4, MKV, AVI, internal and external subtitles, customizable buttons, b
 
 ---
 
-## ⚙ How to Use It (without selling your soul)
+## How to Use It (without selling your soul)
 
 ```kotlin
 val videoItems = listOf(
@@ -104,7 +105,7 @@ WizardVideoPlayer(
 )
 ```
 
-### 🧾 Configuration Breakdown
+### Configuration Breakdown
 
 > *"Ah, curious mortal... let me explain each arcane scroll of `PlayerConfig`. If you don't define them, default values will be invoked from the code... or the whispers of the underworld."*
 
@@ -133,7 +134,7 @@ WizardVideoPlayer(
 
 ---
 
-## 🎨 Dark Customization
+## Dark Customization
 
 * Change colors, icons, and sizes.
 * Modify every label without touching `strings.xml`.
@@ -143,7 +144,7 @@ WizardVideoPlayer(
 
 ---
 
-## 🔊 Events and Tracking
+## Events and Tracking
 
 Wizard Player dispatches events like magic spells:
 
@@ -156,7 +157,8 @@ Use `onGetCurrentTime`, `onGetCurrentItem`, etc. to catch those digital spirits.
 
 ---
 
-## 🚗 Infernal Compatibility
+## Compatibility
+You can use this library from Android 7+
 
 * Android TV
 * Phones
@@ -165,7 +167,7 @@ Use `onGetCurrentTime`, `onGetCurrentItem`, etc. to catch those digital spirits.
 
 ---
 
-## ✍️ Contribute to the Chaos
+## Contribute to the Chaos
 
 1. Fork it
 2. Create a new feature
@@ -176,7 +178,7 @@ Or use a Ouija board. See you at midnight.
 
 ---
 
-## ☑️ Spell List (TODO)
+## ☑Spell List (TODO)
 
 * [ ] Show thumbnail preview on slider focus
 * [ ] Mobile and tablet gestures (volume, brightness, seek)
@@ -184,13 +186,13 @@ Or use a Ouija board. See you at midnight.
 
 ---
 
-## ⚠️ Known Bugs 
+##  Known Bugs 
 
 * 
 
 ---
 
-## 🧙 Farewell from the Beyond
+## Farewell from the Beyond
 
 > *"After implementing Wizard Player, you’ll be able to play all your videos with proper copyright and licensing... not like those who use XUI ONE or XTREAM UI for shady content... wink wink..."*
 
