@@ -2,6 +2,8 @@
 
 # WIZARD PLAYER ⚡
 
+[Leer en español]([https://github.com/fabian7593](https://github.com/fabian7593/Wizard-Player/blob/main/README.es.md))
+
 📌 **Important:**
 This is the official documentation for **Wizard Player**, a professional and fully functional library for video playback on Android.
 While written in a sarcastic and humorous tone for a more entertaining read, all content is completely valid, useful, and production-ready.
