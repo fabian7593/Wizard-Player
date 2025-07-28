@@ -41,7 +41,8 @@ android {
 
 dependencies {
 
-    implementation(project(":WizardPlayerLibrary"))
+    //implementation(project(":WizardPlayerLibrary"))
+    implementation("com.github.fabian7593:wizardplayer:0.1.0")
     implementation(libs.libvlc.all)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -52,7 +53,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.media3.common.ktx)
-    implementation("androidx.compose.material:material-icons-extended:1.6.1")
+    implementation(libs.androidx.material.icons.extended)
     implementation(libs.material)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
