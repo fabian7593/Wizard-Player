@@ -214,6 +214,7 @@ Or use a Ouija board. See you at midnight.
 * [ ] Show thumbnail preview on slider focus
 * [ ] Mobile and tablet gestures (volume, brightness, seek)
 * [ ] Resume playback and data when switching apps
+* [ ] Screen Mirroring
 
 ---
 
