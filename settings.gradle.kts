@@ -22,7 +22,7 @@ dependencyResolutionManagement {
 }
 
 //TODO coment for include(":app") and rootProject.name = "WizardPlayerLibrary" upload library, and decomment for debbug project
-//rootProject.name = "WizardPlayerLibrary"
-rootProject.name = "wizardplayer"
-include(":app")
+rootProject.name = "WizardPlayerLibrary"
+//rootProject.name = "wizardplayer"
+//include(":app")
 include(":WizardPlayerLibrary")

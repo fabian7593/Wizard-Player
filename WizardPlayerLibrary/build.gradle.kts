@@ -62,7 +62,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.fabian7593"
             artifactId = "wizardplayer"
-            version = "0.1.2"
+            version = "0.1.3"
 
             afterEvaluate {
                 from(components["release"])
