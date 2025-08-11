@@ -102,7 +102,11 @@ fun MainScreen(onStartPlayer: (PlayerConfig) -> Unit) {
     var currentId by remember { mutableStateOf("") }
     val ids = remember { mutableStateListOf<String>() }
     var isPoorCpuMode by remember { mutableStateOf(true) }
-    var showBrand by remember { mutableStateOf(true) } // ← NUEVO SWITCH
+    var showBrand by remember { mutableStateOf(true) }
+
+    // 🆕 Estados para las nuevas opciones
+    var noSkipAndDrop by remember { mutableStateOf(false) } // default false
+    var preferHWDecoding by remember { mutableStateOf(true) } // default true
 
     Box(
         modifier = Modifier
@@ -130,7 +134,6 @@ fun MainScreen(onStartPlayer: (PlayerConfig) -> Unit) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .heightIn(max = 200.dp)
-                    .padding(bottom = 16.dp)
                     .padding(bottom = 16.dp)
             )
 
@@ -207,8 +210,7 @@ fun MainScreen(onStartPlayer: (PlayerConfig) -> Unit) {
 
                 // ⚡ SWITCH 2: SHOW BRAND
                 Row(
-                    modifier = Modifier
-                        .fillMaxWidth(),
+                    modifier = Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
@@ -219,6 +221,38 @@ fun MainScreen(onStartPlayer: (PlayerConfig) -> Unit) {
                     Switch(
                         checked = showBrand,
                         onCheckedChange = { showBrand = it }
+                    )
+                }
+
+                // 🆕 RADIO 1: No skip & drop frames
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Text(
+                        text = "No skip & drop frames",
+                        color = MaterialTheme.colorScheme.onBackground
+                    )
+                    Switch(
+                        checked = noSkipAndDrop,
+                        onCheckedChange = { noSkipAndDrop = it }
+                    )
+                }
+
+                // 🆕 RADIO 2: Prefer HW decoding
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Text(
+                        text = "Prefer HW Decoding",
+                        color = MaterialTheme.colorScheme.onBackground
+                    )
+                    Switch(
+                        checked = preferHWDecoding,
+                        onCheckedChange = { preferHWDecoding = it }
                     )
                 }
             }
@@ -232,7 +266,7 @@ fun MainScreen(onStartPlayer: (PlayerConfig) -> Unit) {
                             VideoItem(
                                 title = "Video $id",
                                 subtitle = "Subtítulo $id",
-                                url = "http://161.97.128.152:80/movie/test777/test777/$id.mkv",
+                                url = "http://161.97.128.152//movie/test777/test777/$id.mkv",
                                 season = 1,
                                 episodeNumber = id.toInt(),
                                 lastSecondView = if (id.toInt() == 63) 2000 else 0
@@ -261,7 +295,10 @@ fun MainScreen(onStartPlayer: (PlayerConfig) -> Unit) {
                             fontSize = if (isPoorCpuMode) FontSize.XSMALL else FontSize.MEDIUM,
                             borderType = if (isPoorCpuMode) BorderType.NONE else BorderType.NORMAL,
                             hasShadowText = !isPoorCpuMode,
-                            textColor = 0xffffff
+                            textColor = 0xffffff,
+                            forceNoDropLateFrames = noSkipAndDrop,
+                            forceNoSkipFrames = noSkipAndDrop,
+                            preferHardwareDecoding = preferHWDecoding
                         )
 
                         onStartPlayer(config)

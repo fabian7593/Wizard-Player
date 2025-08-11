@@ -8,17 +8,18 @@ object Config {
     val SHOW_LOGS = true
     fun createLibVlcConfig(config: PlayerConfig): ArrayList<String> {
 
+        val codec =  if (config.preferHardwareDecoding == false) "avcodec" else "mediacodec_ndk"
+
         val vlcOptions = arrayListOf(
             // -- DECODING ENGINE OPTIONS --
-            "--codec=mediacodec_ndk",               // Use modern Android NDK hardware decoder (Android 9+)
+            "--codec=$codec",               // Use modern Android NDK hardware decoder (Android 9+)
 
             // -- CACHING (BUFFERING) SETTINGS --
             "--file-caching=3500",                  // Local file buffering time in ms
-            "--network-caching=7777",               // Network stream buffering time in ms
+            "--network-caching=${config.networkCachingMs ?: 7777}",               // Network stream buffering time in ms
 
-            // -- FRAME DROP FOR PERFORMANCE --
-            "--drop-late-frames",                   // Drop late frames to maintain sync
-            "--skip-frames",                        // Skip frames if decoding is too slow
+            if (config.forceNoDropLateFrames == true) "--no-drop-late-frames" else "--drop-late-frames",  // Drop late frames to maintain sync
+            if (config.forceNoSkipFrames == true) "--no-skip-frames" else "--skip-frames",                // Skip frames if decoding is too slow
 
             // -- CLOCK & TIMING OPTIONS --
             "--clock-jitter=500",                   // Synchronization clock jitter tolerance in ms
@@ -34,7 +35,7 @@ object Config {
 
             // -- COLOR RENDERING OPTIMIZATIONS --
             "--dither-algo=-1",                     // Disable dithering to improve color rendering performance
-            "--tone-mapping=0",                     // Disable tone mapping (no HDR adjustments)
+            //"--tone-mapping=0",                     // Disable tone mapping (no HDR adjustments)
 
             // -- SUBTITLE OVERLAP & TIMING CONTROL --
             "--subsdelay-mode=0",                   // Use absolute delay mode for subtitles (simpler logic)

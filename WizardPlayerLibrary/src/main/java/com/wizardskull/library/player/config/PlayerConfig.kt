@@ -56,7 +56,15 @@ data class PlayerConfig(
     val fontSize: FontSize = FontSize.MEDIUM,      // Subtitle font size: SMALL, MEDIUM, HIGH
     val borderType: BorderType = BorderType.BASIC, // Subtitle border: NONE, BASIC, NORMAL
     val hasShadowText: Boolean = true,             // Whether to render text shadow
-    val textColor: Int = 0xffffff                  // Subtitle text color (e.g. white)
+    val textColor: Int = 0xffffff,                  // Subtitle text color (e.g. white),
+
+    val forceNoDropLateFrames: Boolean? = false,
+    val forceNoSkipFrames: Boolean? = false,
+    val networkCachingMs: Int? = 7777,
+
+    // Decoding (HW/SW)
+    val preferHardwareDecoding: Boolean? = true, // null = auto (use heuristic shouldForceHWDecoding)
+    val forceHardwareStrict: Boolean? = false,    // null = default VLC (false). true = withouth fallback to SW
 ) : Parcelable
 
 

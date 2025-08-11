@@ -97,8 +97,11 @@ fun WizardPlayerView(
                 vout.attachViews(null)
 
                 val media = Media(mediaPlayer.libVLC, videoUrl.toUri())
-                val forceHW = shouldForceHWDecoding()
-                media.setHWDecoderEnabled(forceHW, false)
+
+                val preferHW: Boolean = config.preferHardwareDecoding ?: shouldForceHWDecoding()
+                val forceStrict: Boolean = config.forceHardwareStrict ?: false
+
+                media.setHWDecoderEnabled(preferHW, forceStrict)
                 mediaPlayer.media = media
                 media.release()
                 mediaPlayer.play()
