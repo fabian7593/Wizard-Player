@@ -42,8 +42,8 @@ android {
 dependencies {
 
     //TODO change in debugging
-    //implementation(project(":WizardPlayerLibrary"))
-    implementation("com.github.fabian7593:Wizard-Player:0.1.2")
+    implementation(project(":WizardPlayerLibrary"))
+    //implementation("com.github.fabian7593:Wizard-Player:0.1.2")
     implementation(libs.libvlc.all)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

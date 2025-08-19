@@ -12,10 +12,10 @@ object Config {
 
         val vlcOptions = arrayListOf(
             // -- DECODING ENGINE OPTIONS --
-            "--codec=$codec",               // Use modern Android NDK hardware decoder (Android 9+)
+            "--codec=$codec",         // Use modern Android NDK hardware decoder (Android 9+)
 
             // -- CACHING (BUFFERING) SETTINGS --
-            "--file-caching=3500",                  // Local file buffering time in ms
+            "--file-caching=10000",                                                 // Local file buffering time in ms
             "--network-caching=${config.networkCachingMs ?: 7777}",               // Network stream buffering time in ms
 
             if (config.forceNoDropLateFrames == true) "--no-drop-late-frames" else "--drop-late-frames",  // Drop late frames to maintain sync
@@ -29,24 +29,23 @@ object Config {
             "--no-video-title-show",                // Prevent video title from displaying on playback start
 
             // -- SUBTITLE RENDERING ENGINE --
-            "--sub-filter=marq",                    // Use lightweight subtitle rendering engine
-            "--sub-fps=3",                          // Subtitle rendering frame rate to reduce CPU usage
+            //"--sub-filter=marq",                    // Use lightweight subtitle rendering engine
+            "--sub-fps=5",                          // Subtitle rendering frame rate to reduce CPU usage
 
 
             // -- COLOR RENDERING OPTIMIZATIONS --
             "--dither-algo=-1",                     // Disable dithering to improve color rendering performance
-            //"--tone-mapping=0",                     // Disable tone mapping (no HDR adjustments)
 
             // -- SUBTITLE OVERLAP & TIMING CONTROL --
             "--subsdelay-mode=0",                   // Use absolute delay mode for subtitles (simpler logic)
             "--subsdelay-factor=0.0",               // No additional delay factor
-            "--subsdelay-overlap=1",                // Max 1 subtitle displayed at a time
-            "--subsdelay-min-alpha=255",            // Force full alpha (visibility) for first subtitle in overlap
+            "--subsdelay-overlap=0",                // Max 1 subtitle displayed at a time
+            //"--subsdelay-min-alpha=255",            // Force full alpha (visibility) for first subtitle in overlap
 
             // -- PREFETCH BUFFERING --
-            "--prefetch-buffer-size=64",            // Prefetch buffer size in KiB (reduce lag on slow I/O)
-            "--prefetch-read-size=65536",           // Prefetch read block size (64 KB)
-            "--prefetch-seek-threshold=1048576",    // Prefetch seek threshold (1MB)
+            "--prefetch-buffer-size=512",            // Prefetch buffer size in KiB (reduce lag on slow I/O)
+            "--prefetch-read-size=262144",           // Prefetch read block size (64 KB)
+            "--prefetch-seek-threshold=2097152",    // Prefetch seek threshold (1MB)
 
             // -- AUDIO OPTIMIZATIONS --
             "--no-audio-time-stretch",              // Avoid pitch correction when changing speed (less CPU)
